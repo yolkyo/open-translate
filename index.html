@@ -65,7 +65,7 @@
 
     function startTranslation() {
       if (socket && socket.readyState === WebSocket.OPEN) return;
-      socket = new WebSocket("ws://localhost:8765");
+      socket = new WebSocket("ws://open-translate.onrender.com");
       socket.onopen = function() {
         document.getElementById("status").textContent = "狀態：翻譯中";
         document.getElementById("status").style.color = "#0f0";
