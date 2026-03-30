@@ -4,4 +4,3 @@ soundfile
 googletrans==4.0.0-rc1
 websockets
 numpy
-web: python server.py
