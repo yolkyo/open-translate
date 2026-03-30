@@ -44,7 +44,7 @@ async def send_translation(websocket):
                         break  # 跳出迴圈，停止錄音
 
 async def main():
-    async with websockets.serve(send_translation, "localhost", 8765):
+    async with websockets.serve(send_translation, "0.0.0.0, 8765):
         print("✅ WebSocket 伺服器已啟動，等待前端連線...")
         await asyncio.Future()
 
